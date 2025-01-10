@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
   const {name, cuisines, costForTwo, avgRating, cloudinaryImageId, sla} =
     resData.info;
 
-  const {loggedInUser} = useContext(UserContext);
+  //const {loggedInUser} = useContext(UserContext);
   return (
     // <div
     //   className="m-4 p-4 w-[250] rounded-lg"

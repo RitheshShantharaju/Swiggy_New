@@ -19,11 +19,11 @@ const Header = () => {
     // console.log("useEffect called ");
   }, []);
   // Subscribing to the store
-  const cartItems = useSelector((store) => store.cart.items);
+  //const cartItems = useSelector((store) => store.cart.items);
 
   const {loggedInUser} = useContext(UserContext);
   return (
-    <div className="flex justify-between bg-orange-300 shadow-lg">
+    <div className="flex justify-between bg-orange-300 shadow-lg sticky top-0">
       <div className="logo-container">
         <Link to="/">
           <img className="w-40" src={CDN_URL} />
@@ -62,14 +62,14 @@ const Header = () => {
           </li>
 
           {/* <button
-            onClick={() => {
-              btnReactName === "Login"
-                ? setbtnReactName("Logout")
-                : setbtnReactName("Login");
-            }}
-          >
-            {btnReactName}
-          </button> */}
+              onClick={() => {
+                btnReactName === "Login"
+                  ? setbtnReactName("Logout")
+                  : setbtnReactName("Login");
+              }}
+            >
+              {btnReactName}
+            </button> */}
         </ul>
         {/* <li className="p-4 font-bold">{loggedInUser}</li> */}
       </div>
